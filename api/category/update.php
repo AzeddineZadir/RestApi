@@ -18,6 +18,8 @@
   $data = json_decode(file_get_contents("php://input"));
 
   // Set ID to UPDATE
+  $category->name = $data->name;
+  $category->firstname = $data->fisrstname;
   $category->id = $data->id;
 
   // Delete post
